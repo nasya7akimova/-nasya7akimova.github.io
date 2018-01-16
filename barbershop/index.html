@@ -86,9 +86,74 @@
 				<h2>Записаться</h2>
 				<p class="appointment-info">Укажите желаемую дату и время и мы с вами свяжемся с вами для подтверждения брони</p>
 				<form class="appointment-form" action="htpps:echo.htmlacademy.ru" metod="post">
-					
+					<p class="appointment-item">
+						<label for="data">Дата</label>
+						<input type="text" name="data" id="data" value="" placeholder="08.10.2017">
+					</p>
+					<p class="appointment-item">
+						<label for="time">Время</label>
+						<input type="text" name="time" id="time" value="" placeholder="10:00">
+					</p>
+					<p class="appointment-item">
+						<label for="name">Ваше имя</label>
+						<input type="text" name="name" id="name" value="" placeholder="Борода">
+					<p class="appointment-item">
+						<label for="phone">Телефон</label>
+						<input type="tel" name="phone" id="phone" value="" placeholder="+7 123 456-78-90">
+					</p>
+					<button class="button" type="submit">Отправить</button>
 				</form>
 			</section>
+
 		</main>
+
+		<footer class="main-footer">
+
+			<p class="footer-contacts">
+				Барбершоп "Бородинский"<br>
+				Адрес: г. Санкт-Петербург, Б. Конюшенная д.19/8<br>
+				<a href="map.html">Как нас найти?</a><br>
+				Телефон: +7 (945) 666-02-66
+			</p>
+
+			<div class="sosial-footer">
+				<b>Давайте дружить!</b>
+				<ul>
+					<li><a class="sosial-button" href="#">Вконтакте</a></li>
+					<li><a class="sosial-button" href="#">Фейсбук</a></li>
+					<li><a class="sosial-button" href="#">Инстаграмм</a></li>
+				</ul>
+			</div>
+
+			<p class="footer-copyright">
+				<b>Разработано</b>
+				<a class="button" href="https://htmlacademy.ru">HTMLAcademy</a>
+			</p>
+		</footer>
+
+		<section class="modal modal-login">
+			<h2>Личный кабинет</h2>
+			<p>Введите свой логин и пароль</p>
+			<form class="login-form" action="htpps:echo.htmlacademy.ru" metod="post">
+				<p>
+					<input class="login-icon-user" type="text" name="login" placeholder="Логин">
+				</p>
+				<p>
+					<input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+				</p>
+				<p class="login-password-info"
+					<input type="checkbox" name="remember" class="visually-hidden">
+						Запомни меня
+					<a class="restore" href="#">Я забыл пароль!</a>
+				</p>
+				<button class="button" type="submit">Войти</button>
+			</form>
+			<span class="modal-close">x</span>
+		</section>
+
+		<section class="modal modal-map">
+			<h2 class="visually-hidden">Как до нас добраться?</h2>
+			<span class="modal-close">x</span>
+		</section>
 	</body>
 </html>
