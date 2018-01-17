@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Барбершоп "Бородинский"</title>
+	</head>
+	<body>
+
+		<header class="main-header">
+			<nav class="main-navigation">
+				<a class="main-header-logo" href="index.html">
+				<img src="img/index-logo.svg" width="111" height="24" alt="логотип барбершопа "Бородинский"">
+				</a>
+				<ul class="site-navigation">
+					<li><a href="info.html">Информация</a></li>
+					<li><a href="news.html">Новости</a></li>
+					<li><a href="price.html">Прайс-лист</a></li>
+					<li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+				<ul class="user-navigation">
+					<li class="login-link">Вход</li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main class="container">
+			<h1 class="page-title">Средство для ухода</h1>
+
+			<ul class="breadcrumbs">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="shop.html">Магазин</a></li>
+				<li class="breadcrumbs-current">Средство для ухода</li>
+			</ul>
+
+			<section class="filters">
+				<h2 class="visually-hidden">Фильтр товаров</h2>
+				<form class="filters" action="htpps:echo.htmlacademy.ru" method="get">
+					<fieldset>
+						<legend>Производители:</legend>
+						<ul>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="baxtre-of-california" checked>
+								Baxter of California
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="mr-natty">
+								Mr Natty
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="suavecito" checked>
+								Suavecito
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="malin-goetz">
+								Malin+Goetz
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="murrays">
+								Murray's
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="americam-crew" checked>
+								American crew
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Группа товаров:</legend>
+						<ul>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="shaving">Бритвенные принадлежности
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="hair-care" checked>Средства для ухода
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accessories">Аксессуары
+							</li>
+						</ul>
+					</fieldset>
+					<button class="filter-button button" type="submit">Показать</button>
+				</form>
+			</section>
+
+		</main>
+	</body>
+	</html>
