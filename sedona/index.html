@@ -114,6 +114,42 @@
 			</ul>
 		</section>
 
+		<div class="search-hotels">
+			<h2>Заинтересовались?</h2>
+			<p>
+				Укажите предполагаемые даты поездки,<br>
+				и мы покажем вам лучшие предложения гостниц в Седоне
+			</p>
+			<a class="seach-hotels-btn" href="form.html">Поиск гостниницы в Седоне</a>
+		</div>
+
+		<section class="search-popup popup-hide">
+			<form class="form" action="#" method="post">
+				<p class="form-item">
+					<label class="form-label" for="date-in">Дата заезда</label>
+					<input class="form-input form-input-date" type="data" name="date-in" id="date-in" value="2017-04-24">
+					<span class="icon-calendar"></span>
+				</p>
+				<p class="form-item">
+					<label class="form-label" for="date-out">Дата выезда</label>
+					<input class="form-input form-input-date" type="date" name="date-out" id="date-out" value="2017-07-04">
+					<span class="icon-calendar"></span>
+				</p>
+				<p class="form-item"> <!--есть подозрения, что это не будет работать, как надо-->
+					<label class="to-left" for="count-adults">Взрослые:</label>
+					<input class="btn-minus" type="button" value="-">
+					<input type="text" id="count-adults" placeholder="2">
+					<input class="btn-plus" type="button" value="+">
+				</p>
+				<p class="form-item"> <!--есть подозрения, что это не будет работать, как надо-->
+					<label class="count-children to-left" for="count-children">Дети:</label>
+					<input class="btn-minus" type="button" value="-">
+					<input class="text" id="count-children" placeholder="0">
+					<input class="btn-plus" type="button" value="+">
+				</p>
+				<button type="submit">Найти</button>
+			</form>
+		</section>
 
 		</main>
 
