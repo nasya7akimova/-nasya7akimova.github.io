@@ -5,82 +5,116 @@
 		<title>Выбор гостниицы</title>
 	</head>
 	<body>
-		<header>
-			<a class="header-logo" href="index.html">
+		<div class="container">
+			<header class="main-header">
+				<a class="header-logo" href="index.html">
 				<img scr="img/index-logo.svg" width="" height="" alt="логотип седона">
-			</a>
-			<nav>
-				<ul>
-					<li><a href="info.html">Информация</a></li>
-					<li><a href="gallery.html">Фото и видео</a></li>
-					<li><a href="map-state.html">Карта штата</a></li>
-					<li><a class="navigation-current">Гостиницы</a></li>
-				</ul>
-			</nav>
+				</a>
+				<nav>
+					<ul>
+						<li><a href="info.html">Информация</a></li>
+						<li><a href="gallery.html">Фото и видео</a></li>
+						<li><a href="map-state.html">Карта штата</a></li>
+						<li><a class="navigation-current">Гостиницы</a></li>
+					</ul>
+				</nav>
 
-		<main>
-			<section class="filters">
-				<h1 class="visually-hidden">Фильтр гостниицы</h1>
-				<form class="filters-form" action="#" method="post">
-					<fieldset class="filter-group">
-						<legend class="filter-group-title">Инфраструктура:</legend>
-						<ul>
-							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="pool" id="pool" checked>
-								<label for="pool">
+			<main>
+				<section class="filters">
+					<h1 class="visually-hidden">Фильтр гостниицы</h1>
+					<form class="filters-form" action="#" method="post">
+						<fieldset class="filter-group">
+							<legend class="filter-group-title">Инфраструктура:</legend>
+							<ul>
+								<li class="filter-option">
+									<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="pool" id="pool" checked>
+									<label for="pool">
 									Бассейн
-								</label>
-							</li>
-							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="parking" id="parking">
-								<label for="parking">
-									Парковка
-								</label>
-							</li>
-							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="wi-fi" id="wi-fi">
-								<label for="wi-fi">
-									Wi-Fi
-								</label>
-							</li>
-						</ul>
-					</fieldset>
-					<fieldset class="filter-group">
-						<legend class="filter-group-title">Тип жилья:</legend>
-						<ul>
-							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="hotel" id="hotel" checked>
-								<label for="hotel">
-									Гостиница
-								</label>
-							</li>
-							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="motel" id="motel" checked>
-								<label for="motel">
-									Мотель
-								</label>
-							</li>
-							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="apartments" id="apartments">
-								<label for="apartments">
-									Аппартаменты
-								</label>
-							</li>
-						</ul>
-					</fieldset>
-					<div class="filter-price-day">
-						<p class="filter-price-title">Стоимость в сутки (Р):</p>
-						<div class="filter-price-search">
-							<p class="price-low">От 0</p>
-							<p class="price-high">До 3000</p>
+									</label>
+								</li>
+								<li class="filter-option">
+									<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="parking" id="parking">
+									<label for="parking">
+										Парковка
+									</label>
+								</li>
+								<li class="filter-option">
+									<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="wi-fi" id="wi-fi">
+									<label for="wi-fi">
+										Wi-Fi
+									</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="filter-group">
+							<legend class="filter-group-title">Тип жилья:</legend>
+							<ul>
+								<li class="filter-option">
+									<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="hotel" id="hotel" checked>
+									<label for="hotel">
+										Гостиница
+									</label>
+								</li>
+								<li class="filter-option">
+									<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="motel" id="motel" checked>
+									<label for="motel">
+										Мотель
+									</label>
+								</li>
+								<li class="filter-option">
+									<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="apartments" id="apartments">
+									<label for="apartments">
+										Аппартаменты
+									</label>
+								</li>
+							</ul>
+						</fieldset>
+						<div class="cost">
+							<div class="cost__title">Стоимость в сутки (₽):</div>
+							<div class="cost__values">
+								<div class="cost__value">от <span id="#min">0</span></div>
+								<div class="cost__value">до <span id="#max">3000</span></div>
+							</div>
+  							<div class="cost__slider">тут сам слайдер</div>
+  							<!-- гуглим jquery UI slider -->
+  							<div class="cost__submit">Показать</div>
 						</div>
-						<div class="range-controls">
-							<div class="bar"></div> <!--непрерывная полоса-->
-							<div class="range-toggle range-toggle-min"></div> <!--положение тумблера в минимуме-->
-							<div class="range-toggle range-toggle-max"></div> <!--положение тумблера в максимуме-->
+					</form>
+				</section>
+				<section class="found">
+					<header class="found-header container__inner">
+						<div class="found-info">
+							<p class="found-title title">
+								Найдено:<span class="sort-quantity">3</span>
+							</p>
+							<p class="found-text text">Сортировка:</p>
+							<ul class="found-list">
+								<li class="found-item found-active"><a href="#">По цене</a></li>
+								<li class="found-item"><a href="#">По типу</a></li>
+								<li class="found-item"><a href="#">По рейтингу</a></li>
+							</ul>
+							<div class=found-scroll>
+								<a class="scroll" href="#"><span class="scroll-up"></span></a>
+								<a class="scroll" href="#"><span class="scroll-down scroll-down-active"></span></a>
+							</div>
+						</div>
+					</header>
+					<div class="found-results">
+						<div class="result-card container__inner">
+							<p class="card-image">
+								<img src="img/pics/hotel.jpeg" width="" height="" alt="отель amara resort & spa">
+							</p>
+							<div class="card-info">
+								<h2 class="card-title title"><a class="card-link" href="#">Amara resort & spa</a></h2>
+								<p class="card-text text card-type">гостиница</p>
+								<p class="card-text text card-price">от 3500 Р.</p>
+								<div class="card-actions">
+									<a class="card-button button-more-info" href="#">подробнее</a>
+									<a class="card-button button-reserve" href="#">забронировать</a>
+								</div>
+								<div class="card-rating right">
+									
 
 
-
-					</div>
 	</body>
 </html>
