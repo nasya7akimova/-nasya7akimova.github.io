@@ -22,27 +22,65 @@
 			<section class="filters">
 				<h1 class="visually-hidden">Фильтр гостниицы</h1>
 				<form class="filters-form" action="#" method="post">
-					<fieldset>
-						<legend>Инфраструктура:</legend>
+					<fieldset class="filter-group">
+						<legend class="filter-group-title">Инфраструктура:</legend>
 						<ul>
 							<li class="filter-option">
 								<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="pool" id="pool" checked>
-								Бассейн
+								<label for="pool">
+									Бассейн
+								</label>
 							</li>
 							<li class="filter-option">
 								<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="parking" id="parking">
-								<label for="parking">Парковка</label>
+								<label for="parking">
+									Парковка
+								</label>
 							</li>
 							<li class="filter-option">
 								<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="wi-fi" id="wi-fi">
-								<label for="wi-fi">Wi-Fi</label>
+								<label for="wi-fi">
+									Wi-Fi
+								</label>
 							</li>
+						</ul>
 					</fieldset>
-					<fieldset>
-						<legend>Тип жилья</legend>
+					<fieldset class="filter-group">
+						<legend class="filter-group-title">Тип жилья:</legend>
+						<ul>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="hotel" id="hotel" checked>
+								<label for="hotel">
+									Гостиница
+								</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="motel" id="motel" checked>
+								<label for="motel">
+									Мотель
+								</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="apartments" id="apartments">
+								<label for="apartments">
+									Аппартаменты
+								</label>
+							</li>
+						</ul>
 					</fieldset>
-					<p class="search-form-item">
-						
-					</p>
+					<div class="filter-price-day">
+						<p class="filter-price-title">Стоимость в сутки (Р):</p>
+						<div class="filter-price-search">
+							<p class="price-low">От 0</p>
+							<p class="price-high">До 3000</p>
+						</div>
+						<div class="range-controls">
+							<div class="bar"></div> <!--непрерывная полоса-->
+							<div class="range-toggle range-toggle-min"></div> <!--положение тумблера в минимуме-->
+							<div class="range-toggle range-toggle-max"></div> <!--положение тумблера в максимуме-->
+
+
+
+					</div>
 	</body>
 </html>
