@@ -6,32 +6,32 @@
 	</head>
 	<body>
 
-		<header class="main-header">
-			<nav class="main-navigation">
-				<a class="main-header-logo">
+		<header class="main-header"> <!--хедер сайта-->
+			<nav class="main-navigation"> <!--навигация-->
+				<a class="main-header-logo"> <!--логотип, он будет кликабальным, на других страницах-->
 				<img src="img/index-logo.svg" width="368" height="153" alt="логотип барбершопа «Бородинский»">
 				</a>
-				<ul class="site-navigation">
+				<ul class="site-navigation"> <!--навигация по сайту-->
 					<li><a href="info.html">Информация</a></li>
 					<li><a href="news.html">Новости</a></li>
 					<li><a href="price.html">Прайс-лист</a></li>
 					<li><a href="shop.html">Магазин</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
-				<ul class="user-navigation">
+				<ul class="user-navigation"> <!--пользовательская навигация-->
 					<li class="login-link">Вход</li>
 				</ul>
 			</nav>
 		</header>
 
-		<main class="container">
+		<main class="container"> <!--блок с основным уникальным содержанием страницы и контейнер-центрировщик-->
 			
-			<h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
+			<h1 class="visually-hidden">Барбершоп «Бородинский»</h1> <!--основной заголовок, который будет скрыт-->
 
-			<section class="features">
-				<h2 class="visually-hidden">Приемущества</h2>
-				<ul class="features-list">
-					<li class="feature-item"> <!--feature-item ед.ч.-->
+			<section class="features"> <!--блок с приемуществами-->
+				<h2 class="visually-hidden">Приемущества</h2> <!--заголовок секции, будет скрыт-->
+				<ul class="features-list"> <!--приемущества-это неупорядоченный список-->
+					<li class="feature-item"> <!--feature-item ед.ч.- приемущество, как элемент списка-->
 						<h3>Быстро</h3>
 						<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и и вы - счастливый обладатель стрижки-минутки</p>
 					</li>
@@ -46,10 +46,10 @@
 				</ul>
 			</section>
 
-			<section class="news">
-				<h2>Новости</h2>
-				<ul class="news-list">
-					<li class="news-item">
+			<section class="news"> <!--блок с новостями-->
+				<h2>Новости</h2> <!--заголовок секции-->
+				<ul class="news-list"> <!--блок новостей-это неупорядоченный список-->
+					<li class="news-item"> <!--сама новость, как элемент списка-->
 						<p>На наконец-то завезли Ягермастер! Теперь вы можете пропустить стаканчик во время стрижки</p>
 						<time datetime="2018-01-11">11 января</time>
 					</li>
@@ -58,103 +58,105 @@
 						<time datetime="2018-01-18">18 января</time>
 					</li>
 				</ul>
-				<a class="button" href="news.html">Все новости</a>
+				<a class="button" href="news.html">Все новости</a> <!--кнопка-сслыка, она ведет на страницу с другими новостями-->
 			</section>
 
-			<section class="gallery">
-				<h2>Фотогалерея</h2>
-				<figure class="gallery-content">
-					<a href="#"><img src="img/studio.jpeg" width="286" height="164" alt="Интерьер"></a>
+			<section class="gallery"> <!--блок с галереей-->
+				<h2>Фотогалерея</h2> <!--заголовок секции-->
+				<figure class="gallery-content"> <!--контейнер для фотогалереии-->
+					<a href="#"><img src="img/studio.jpeg" width="286" height="164" alt="Интерьер"></a> <!--картинка-->
 				</figure>
-				<span class="button gallery-button gallery-button-back">Назад</span>
+				<span class="button gallery-button gallery-button-back">Назад</span> <!--кнопка перелистывания картинок-->
 				<span class="button gallery-button gallery-button-next">Вперед</span>
 			</section>
 
-			<section class="contacts">
-				<h2>Контактная информация</h2>
+			<section class="contacts"> <!--блок с контактами-->
+				<h2>Контактная информация</h2> <!--заголовок блока-->
 				<p> Барбершоп «Бородинский»<br>
-					Адрес: г. Санкт-Петербург, Б. Конюшенная д.19/8<br>
+					Адрес: г. Санкт-Петербург, Б. Конюшенная д.19/8<br> <!--<br> уместен, чтобы точнее соотвествовать макету-->
 					Телефон: +7 (945) 666-02-66</p>
-				<p> Время работы:<br>
+				<p> Время работы:<br> <!--<p> объеденяет текс по смыслу, следовательно здесь два абзаца-->
 					ПН-ПТ: с 10:00 до 22:00<br>
 					СБ-ВС: 10:00 до 19:00</p>
-				<a class="button contacts-button" href="map.html">Как проехать</a>
-				<a class="button contacts-button" href="contacts.html">Обратная связь</a>
+				<a class="button contacts-button" href="map.html">Как проехать</a> <!--кнопка-ссылка, она ведет на страницу с картой-->
+				<a class="button contacts-button" href="contacts.html">Обратная связь</a> <!--кнопка-ссылка, она ведет на страницу с контактами-->
 			</section>
 
-			<section class="appointment">
-				<h2>Записаться</h2>
-				<p class="appointment-info">Укажите желаемую дату и время и мы с вами свяжемся с вами для подтверждения брони</p>
-				<form class="appointment-form" action="htpps://echo.htmlacademy.ru" metod="post">
-					<p class="appointment-item">
+			<section class="appointment"> <!--блок с формой записи на прием-->
+				<h2>Записаться</h2> <!--заголовок блока-->
+				<p class="appointment-info">Укажите желаемую дату и время и мы с вами свяжемся с вами для подтверждения брони</p> <!--просто абзац с информацией-->
+				<form class="appointment-form" action="htpps://echo.htmlacademy.ru" metod="post"> <!--сама форма записи на прием-->
+					<p class="appointment-item"> <!--поле и текст образуют логический блок - смысловой блок-->
 						<label for="data">Дата</label>
-						<input type="text" name="data" id="data" value="" placeholder="08.10.2017">
+						<input type="text" name="data" id="data" value="" placeholder="08.10.2017"> <!--поле ввода даты и подсказка-->
 					</p>
 					<p class="appointment-item">
 						<label for="time">Время</label>
-						<input type="text" name="time" id="time" value="" placeholder="10:00">
+						<input type="text" name="time" id="time" value="" placeholder="10:00"> <!--поле ввода времеми и подсказка-->
 					</p>
 					<p class="appointment-item">
 						<label for="name">Ваше имя</label>
-						<input type="text" name="name" id="name" value="" placeholder="Борода">
+						<input type="text" name="name" id="name" value="" placeholder="Борода"> <!--текстовое поле и подсказка-->
 					</p>
 					<p class="appointment-item">
 						<label for="phone">Телефон</label>
-						<input type="tel" name="phone" id="phone" value="" placeholder="+7 123 456-78-90">
+						<input type="tel" name="phone" id="phone" value="" placeholder="+7 123 456-78-90"> <!--поле ввода телефона и подсказка-->
 					</p>
-					<button class="button" type="submit">Отправить</button>
+					<button class="button" type="submit">Отправить</button> <!--кнопка для отправки данных формы, у <button> более широкие возможности-->
 				</form>
 			</section>
 
 		</main>
 
-		<footer class="main-footer">
+		<footer class="main-footer"> <!--подвал сайта, который повторяется на всех страницах-->
 
-			<p class="footer-contacts">
+			<p class="footer-contacts"> <!--адрес-смысловой абзац, но не <div>-->
 				Барбершоп «Бородинский»<br>
 				Адрес: г. Санкт-Петербург, Б. Конюшенная д.19/8<br>
 				<a href="map.html">Как нас найти?</a><br>
 				Телефон: +7 (945) 666-02-66
 			</p>
 
-			<div class="footer-social">
+			<div class="footer-social"> <!--небольшой блок соц.сетей-->
 				<b>Давайте дружить!</b>
-				<ul>
+				<ul> <!--соц.сети-это неупорядочный список-->
 					<li><a class="social-button" href="#">Вконтакте</a></li>
 					<li><a class="social-button" href="#">Фейсбук</a></li>
 					<li><a class="social-button" href="#">Инстаграмм</a></li>
 				</ul>
 			</div>
 
-			<p class="footer-copyright">
+			<p class="footer-copyright"> <!--блок копирайта-смысловой абзац, но не <div>-->
 				<b>Разработано</b>
-				<a class="button" href="https://htmlacademy.ru">HTMLAcademy</a>
+				<a class="button" href="https://htmlacademy.ru">HTMLAcademy</a> <!--кнопка-ссылка, она ведет на сайт разработчика-->
 			</p>
 		</footer>
 
-		<section class="modal modal-login">
+		<section class="modal modal-login"> <!--попап -всплывающе окно- личный кабинет-->
 			<h2>Личный кабинет</h2>
-			<p>Введите свой логин и пароль</p>
-			<form class="login-form" action="htpps://echo.htmlacademy.ru" metod="post">
-				<p>
+			<p>Введите свой логин и пароль</p> <!--просто абзай перед формой-->
+			<form class="login-form" action="htpps://echo.htmlacademy.ru" metod="post"> <!--форма входа-->
+				<p> <!--тексовое поле-смысловой абзац-->
 					<input class="login-icon-user" type="text" name="login" placeholder="Логин">
 				</p>
 				<p>
-					<input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+					<input class="login-icon-password" type="password" name="password" placeholder="Пароль"> <!--поле ввода пароля и подсказка-->
 				</p>
-				<p class="login-password-info">
-					<input class="visually-hidden" type="checkbox" name="remember">
+				<p class="login-password-info"> <!--чекбокс и восстановление пароля-сысловой абзац-->
+					<input class="visually-hidden" type="checkbox" name="remember" id="remember"> <!--поле-галочка-->
+					<label for="remember">
 						Запомни меня
-					<a class="restore" href="#">Я забыл пароль!</a>
+					</label>
+					<a class="restore" href="#">Я забыл пароль!</a> <!--ссылка ведет на страницу восстановления пароля-->
 				</p>
-				<button class="button" type="submit">Войти</button>
+				<button class="button" type="submit">Войти</button> <!--кнопка отправки данных формы-->
 			</form>
-			<span class="modal-close">x</span>
+			<span class="modal-close">x</span> <!--оформление крестика, который позволяет закрыть попап-->
 		</section>
 
-		<section class="modal modal-map">
+		<section class="modal modal-map"> <!--попап -всплывающее окно- карта-->
 			<h2 class="visually-hidden">Как до нас добраться?</h2>
-			<span class="modal-close">x</span>
+			<span class="modal-close">x</span> <!--оформление крестика, который позвоялет закрыть попап-->
 		</section>
 	</body>
 </html>
