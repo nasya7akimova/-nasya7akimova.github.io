@@ -6,7 +6,7 @@
 	</head>
 	<body>
 
-		<header class="main-header">
+		<header class="main-header"> <!--хедер в таком виде повторяется на всех страницах, кроме главной-->
 			<nav class="main-navigation">
 				<a class="main-header-logo" href="index.html">
 				<img src="img/index-logo.svg" width="111" height="24" alt="логотип барбершопа «Бородинский»">
@@ -24,23 +24,23 @@
 			</nav>
 		</header>
 		
-		<main class="container">
-			<h1 class="page-title">Средство для ухода</h1>
+		<main class="container"> <!--блок основного уникального содержания и контейнер-центрировщик-->
+			<h1 class="page-title">Средство для ухода</h1> <!--основной заголовок страницы-->
 
-			<ul class="breadcrumbs">
-				<li><a href="index.html">Главная</a></li>
+			<ul class="breadcrumbs"> <!--хлебные крошки -навигационная цепочка- ненумированный список-->
+				<li><a href="index.html">Главная</a></li> <!--звено цепочки -ссылка на одну из страниц на сайте-->
 				<li><a href="shop.html">Магазин</a></li>
-				<li class="breadcrumbs-current">Средство для ухода</li>
+				<li class="breadcrumbs-current">Средство для ухода</li> <!--это текущая страница-->
 			</ul>
 
-			<section class="filters">
-				<h2 class="visually-hidden">Фильтр товаров</h2>
-				<form class="filters" action="htpps://echo.htmlacademy.ru" method="get">
-					<fieldset>
-						<legend>Производители:</legend>
-						<ul>
-							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="baxtre-of-california" id="baxtre-of-california" checked>
+			<section class="filters"> <!--блок с фильрами товаров-->
+				<h2 class="visually-hidden">Фильтр товаров</h2> <!--заголовок блока, будет скрыт-->
+				<form class="filters" action="htpps://echo.htmlacademy.ru" method="get"> <!--сама форма фильтров товаров-->
+					<fieldset> <!--первая группа фильров -группировка полей форм-->
+						<legend>Производители:</legend> <!--заголовок группы-->
+						<ul> <!--перечень производителей -нунемированный список-->
+							<li class="filter-option"> <!--производитель-->
+								<input class="visually-hidden filter-input filter-input-checbox" type="checkbox" name="baxtre-of-california" id="baxtre-of-california" checked> <!--выбран чекбокс, потому что можно выбрать все позиции-->
 								<label for="baxtre-of-california">
 									Baxter of California
 								</label>
@@ -77,11 +77,11 @@
 							</li>
 						</ul>
 					</fieldset>
-					<fieldset>
-						<legend>Группа товаров:</legend>
-						<ul>
-							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="shaving" id="shaving">
+					<fieldset> <!--вторая группа фильтров -группировка полей форм-->
+						<legend>Группа товаров:</legend> <!--заголовок группы-->
+						<ul> <!--список групп товаров -ненумированный список-->
+							<li class="filter-option"> <!--отдельная группа товаров-->
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="shaving" id="shaving"> <!--выбран radio, потому что можно выбрать только одну позицию-->
 								<label for="shaving">
 									Бритвенные принадлежности
 								</label>
@@ -100,28 +100,28 @@
 							</li>
 						</ul>
 					</fieldset>
-					<button class="filter-button button" type="submit">Показать</button>
+					<button class="filter-button button" type="submit">Показать</button> <!--кнопка отправки данных формы-->
 				</form>
 			</section>
 
-			<section class="catalog">
-				<h2 class="visually-hidden">Средства для ухода</h2>
-				<ul class="catalog-list">
-					<li class="catalog-item">
-						<h3>
+			<section class="catalog"> <!--каталог, вероятно результаты выбора пользователя в фильтре товаров-->
+				<h2 class="visually-hidden">Средства для ухода</h2> <!--заголовок блока, будет скрыт-->
+				<ul class="catalog-list"> <!--перечень товаров -ненумированный список-->
+					<li class="catalog-item"> <!--товар-->
+						<h3> <!--заголовок будет кликабальным, он ведет на страницу с этим товаром-->
 							<a href="catalog-item.html">
 								<span class="catalog-category">Набор для путешествий</span>
 								<span class="catalog-item-title">«Baxter of California»</span>
 							</a>
 						</h3>
-						<p class="catalog-item-image">
+						<p class="catalog-item-image"> <!--контентное изображение товара, по макету он стоит выше заголовка, но так лучше по семантике, оно тоже ведет на страницу с этим товаром-->
 							<a href="catalog-item.html">
 								<img scr="img/product-1.jpeg" width="220" height="165" alt="Набор для путешествий «Baxter of California»">
 							</a>
 						</p>
-						<p class="catalog-item-price">
-							<b>2 900 Р</b>
-							<a class="button" href="#">Купить</a>
+						<p class="catalog-item-price"> <!--цена и кнопка-ссылка -смысловой абзац-->
+							<b>2 900 Р</b> <!--указать, что это важно-->
+							<a class="button" href="#">Купить</a> <!--кнопка-ссылка, она ведет в корзину-->
 						</p>
 					</li>
 					<li class="catalog-item">
@@ -210,15 +210,15 @@
 						</p>
 					</li>
 				</ul>
-				<ul class="pagination-list">
-					<li class="pagination-item"><a href="#">1</a></li>
-					<li class="pagination-item pagination-item-current"><a>2</a></li>
+				<ul class="pagination-list"> <!--пагинация -нумемариция страниц- ненумированный список-->
+					<li class="pagination-item"><a href="#">1</a></li> <!--каждая кнопка - ссылка на одну из страниц на сайте-->
+					<li class="pagination-item pagination-item-current"><a>2</a></li> <!--текущая страниица-->
 					<li class="pagination-item"><a href="#">3</a></li>
 					<li class="pagination-item"><a href="#">4</a></li>
 			</section>
 		</main>
 
-		<footer class="main-footer">
+		<footer class="main-footer"> <!--футер повторяется на всех страницах-->
 
 			<p class="footer-contacts">
 				Барбершоп «Бородинский»<br>
@@ -242,7 +242,7 @@
 			</p>
 		</footer>
 
-		<section class="modal modal-login">
+		<section class="modal modal-login"> <!--попап -личный кабинет- повторяется на всех страницах-->
 			<h2>Личный кабинет</h2>
 			<p>Введите свой логин и пароль</p>
 			<form class="login-form" action="htpps://echo.htmlacademy.ru" metod="post">
